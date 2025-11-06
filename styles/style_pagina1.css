@@ -1,0 +1,267 @@
+main > section:first-of-type {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+main > section:first-of-type img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+
+/* W3 schools */
+main > section:first-of-type::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 10%, transparent 60%);
+  z-index: -1;
+}
+
+main > section:first-of-type h2,
+main > section:first-of-type a,
+main > section:first-of-type p {
+  position: absolute;
+  color: var(--white);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+main > section:first-of-type h2 {
+  bottom: 5.2em;
+  font-size: 2.5rem;
+  font-weight: 400;
+  width: 100%;
+}
+
+main > section:first-of-type a {
+  bottom: 11em;
+  left: 3em;
+  border: 1.5px solid var(--white);
+  padding: 1rem 4.5rem;
+  font-size: 1em;
+  text-decoration: none;
+  border-radius: 0.2rem;
+  display: inline-block;
+}
+
+main > section:first-of-type p {
+  bottom: 8.7em;
+  font-size: 0.8em;
+  max-width: 90%;
+  line-height: 1.4;
+  color: var(--grey);
+}
+
+/* SECTIE 2 */
+main > section:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  padding: 2rem;
+  padding-top: 3rem;
+}
+
+main > section:nth-of-type(2) article {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+/* plaatjes auto's */
+main > section:nth-of-type(2) article img:first-of-type {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* titel en pijl */
+main > section:nth-of-type(2) article h4,
+main > section:nth-of-type(2) article img:last-of-type {
+  position: absolute;
+  bottom: 1rem;
+  z-index: 2;
+  color: var(--white);
+}
+
+main > section:nth-of-type(2) article h4 {
+  left: 1rem;
+  margin-bottom: 0.1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+main > section:nth-of-type(2) article img:last-of-type {
+  right: 1rem;
+  width: 1rem;
+  height: auto;
+}
+
+main > section:nth-of-type(2) p {
+  font-size: 0.7rem;
+  color: var(--grey);
+}
+
+main > section:nth-of-type(2) article::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 10%, transparent 30%);
+  z-index: 1;
+}
+
+main > h2 {
+  padding-left: 3.5rem;
+  font-size: 2.3rem;
+  font-weight: 400;
+}
+
+main > section:nth-of-type(3) {
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 2rem;
+}
+
+/* SECTIE 3 */
+main > section:nth-of-type(3) {
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 2rem;
+}
+
+main > section:nth-of-type(3) > ul:first-of-type {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 2rem;
+  margin: 0;
+  list-style: none;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory; /*per slide staan */
+}
+
+/*slide*/
+main > section:nth-of-type(3) > ul:first-of-type > li {
+  min-width: 95%;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  scroll-snap-align: center; /*per slide staan */
+}
+
+main > section:nth-of-type(3) > ul:first-of-type > li img:first-of-type {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+main > section:nth-of-type(3) > ul:first-of-type > li::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 10%, transparent 60%);
+}
+
+main > section:nth-of-type(3) > ul:first-of-type > li button,
+main > section:nth-of-type(3) > ul:first-of-type > li p,
+main > section:nth-of-type(3) > ul:first-of-type > li img:last-of-type {
+  position: absolute;
+  z-index: 2;
+  color: var(--white);
+  margin: 0;
+}
+
+/* label */
+main > section:nth-of-type(3) > ul:first-of-type > li button {
+  bottom: 6rem;
+  left: 1.2rem;
+  background-color: rgba(99, 99, 99, 0.6);
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+}
+
+main > section:nth-of-type(3) > ul:first-of-type > li p:first-of-type {
+  bottom: 4rem;
+  left: 1.2rem;
+  font-size: 1rem;
+  text-align: left;
+  max-width: 80%;
+}
+
+/* ontdek tekst */
+main > section:nth-of-type(3) > ul:first-of-type > li p:last-of-type {
+  bottom: 1.5rem;
+  left: 1.2rem;
+  font-weight: 400;
+}
+
+main > section:nth-of-type(3) > ul:first-of-type > li img:last-of-type {
+  bottom: 1.7rem;
+  left: 5rem;
+  width: 1rem;
+}
+
+/* slider carrousel */
+main > section:nth-of-type(3) > ul:last-of-type {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  list-style: none;
+  padding: 0;
+  margin-left: 1rem;
+}
+
+main > section:nth-of-type(3) > ul:last-of-type > li {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 90%;
+  background-color: var(--grey);
+}
+
+/* SECTIE 4 */
+main > section:nth-of-type(4) {
+  display: grid;
+  margin: 2em;
+  background-color: var(--black);
+  border-radius: 1rem;
+}
+
+main > section:nth-of-type(4) h3,
+main > section:nth-of-type(4) p {
+  color: var(--white);
+  margin: 0;
+}
+
+main > section:nth-of-type(4) h3 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1rem 1rem;
+}
+
+main > section:nth-of-type(4) p {
+  padding: 0 1rem 0 1rem;
+}
+
+main > section:nth-of-type(4) a {
+  padding: 1rem 1rem;
+  margin: 1rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.2rem;
+  text-align: center;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+main > section:nth-of-type(4) img {
+  width: 100%;
+  border-radius: 1rem;
+}
