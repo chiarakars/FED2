@@ -5,12 +5,17 @@
     <meta name="author" content="Chiara" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Porsche home</title>
+
     <link href="./styles/style_algemeen.css" rel="stylesheet" />
     <link href="./styles/style_pagina1.css" rel="stylesheet" />
+
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
   </head>
 
   <body>
+    <!-- **********************************
+    MAIN NAVIGATIE BOVENAAN HOMEPAGE
+    *********************************** -->
     <nav>
       <ul>
         <li>
@@ -26,18 +31,26 @@
         <li>
           <img src="images/account_icon_white.png" alt="Account icoon" />
         </li>
+        <li>
+          <button>
+            <img src="images/darkmode.png" alt="darkmode icon" />
+            <img src="images/lightmode.png" alt="lightmode icon" />
+          </button>
+        </li>
       </ul>
     </nav>
 
+    <!-- **********************************
+    HAMBURGER MENU
+    *********************************** -->
     <nav>
       <ul>
-		<li>
-			<img src="images/cross.png" alt="go back to home" />
-		</li>
-		<hr>
         <li>
-          <a href="#">Modellen</a>
-		  <a href="#"><img src="images/arrow_menu.png" alt="Icon pijl" /></a>
+          <img src="images/cross.png" alt="go back to home" />
+        </li>
+        <!-- STREEP INVOEGEN -->
+        <li>
+          <a href="#">Modellen <img src="images/arrow_menu.png" alt="" /></a>
         </li>
         <li>
           <a href="#">Advies & aankoop</a>
@@ -60,7 +73,7 @@
           <a href="#"><img src="images/arrow_menu.png" alt="Icon pijl" /></a>
         </li>
         <li>
-			<img src="images/account_icon.svg" alt="Account icoon" />
+          <img src="images/account_icon.svg" alt="Account icoon" />
           <a href="#">Account</a>
           <a href="#"><img src="images/arrow_menu.png" alt="Icon pijl" /></a>
         </li>
@@ -68,6 +81,9 @@
     </nav>
 
     <main>
+      <!-- **********************************
+    SECTIE 1: HOMEPAGE
+    *********************************** -->
       <!-- <h1>maak onzichtbaar</h1> -->
       <section>
         <h2>Uniek in zijn soort.</h2>
@@ -79,18 +95,10 @@
         <img src="images/porsche15.jpeg" alt="aanpassen" />
       </section>
 
+      <!-- **********************************
+    SECTIE 2: DE DRIE MODELLEN
+    *********************************** -->
       <section>
-        <form id="theme-form">
-          <label>
-            <input type="radio" name="theme" value="light" checked /> Light Mode
-          </label>
-          <label>
-            <input type="radio" name="theme" value="dark" /> Dark Mode
-          </label>
-          <label>
-            <input type="radio" name="theme" value="green" /> Sustainable Mode
-          </label>
-        </form>
         <article>
           <img
             src="images/taycan_home.webp"
@@ -137,6 +145,9 @@
 
       <h2>Uw Porsche reis begint nu.</h2>
 
+    <!-- ****************************
+    SECTIE 3: CARROUSEL
+    **************************** -->
       <section>
         <ul>
           <li>
@@ -198,6 +209,9 @@
         </ul>
       </section>
 
+    <!-- **********************************
+    SECTIE 4: BASIC SECTIE: PORSCHE CENTRUM
+    *********************************** -->
       <section>
         <img
           src="images/porsche_centrum.webp"
@@ -213,14 +227,11 @@
         </p>
         <a>Vind uw Porsche</a>
       </section>
-
-      <section>
-        <video width="320" height="160" controls>
-          <source src="images/racing_video.mp4" type="video/mp4" />
-        </video>
-      </section>
     </main>
 
+    <!-- **********************************
+    FOOTER
+    *********************************** -->
     <footer>
       <section>
         <h4>Huidige regio / taal</h4>
@@ -330,3 +341,25 @@
     <script defer src="scripts/javascript.js"></script>
   </body>
 </html>
+
+<!-- **********************************
+    OUDE DARK LIGHT MODE
+    *********************************** -->
+<!-- <form id="theme-form">
+          <label>
+            <input type="radio" name="theme" value="light" checked /> Light Mode
+          </label>
+          <label>
+            <input type="radio" name="theme" value="dark" /> Dark Mode
+          </label>
+          <label>
+            <input type="radio" name="theme" value="green" /> Sustainable Mode
+          </label>
+        </form> -->
+
+        
+              <!-- <section>
+        <video width="320" height="160" controls>
+          <source src="images/racing_video.mp4" type="video/mp4" />
+        </video>
+      </section> -->

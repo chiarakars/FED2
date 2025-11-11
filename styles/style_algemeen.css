@@ -1,27 +1,3 @@
-:root {
-  --white: #ffffff;
-  --black: #000000;
-  --grey: #afb0b3;
-  --background: #ffffff;
-  --lightgrey: rgb(0, 0, 0);
-}
-
-body[data-theme="dark"] {
-  --white: #ffffff;
-  --black: #494949;
-  --grey: #ffffff;
-  --background: black;
-  --lightgrey: #ffffff;
-}
-
-body[data-theme="green"] {
-  --white: #fdfffd;
-  --black: #041f0d;
-  --grey: #8bc34a;
-  --background: rgb(0, 49, 18);
-  --lightgrey: #ffffff;
-}
-
 @font-face {
   font-family: "Porsche Next";
   src: url("../fonts/porsche-next-arabic.otf") format("opentype");
@@ -38,35 +14,75 @@ body[data-theme="green"] {
   font-display: swap;
 }
 
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #afb0b3;
+  --background: #ffffff;
+  --lightgrey: rgb(0, 0, 0);
+}
+
+/* body[data-theme="dark"] {
+  --white: #ffffff;
+  --black: #494949;
+  --grey: #ffffff;
+  --background: black;
+  --lightgrey: #ffffff;
+}
+
+body[data-theme="green"] {
+  --white: #fdfffd;
+  --black: #041f0d;
+  --grey: #8bc34a;
+  --background: rgb(0, 49, 18);
+  --lightgrey: #ffffff;
+} */
+
+
+/* staat op rare plek */
+
 @media (max-width: 480px) {
 	nav:nth-of-type(1) ul li:nth-child(2) img {
 	  height: 3rem;
 	}
-  }
+}
+
+
+
+
+
 
 body {
   margin: 0;
   font-family: "Porsche Next", Verdana, Tahoma, sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden; /* BAH */
   background-color: var(--background);
 }
 
+
+
+
+/* ******************* */
+/* NAVIGATIE HOMEPAGE BOVENAAN */
+/* ******************* */
 nav:nth-of-type(1) {
 	position: absolute;
 	top: 0;
-	width: 100%;
+	/* width: 100%; */
+  left:0;
+  right:0;
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
 	z-index: 100;
-  }
+}
   
-  nav:nth-of-type(1) ul {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	list-style: none;
-	margin: 0;
-	padding: 1rem 2rem;
-  }
+nav:nth-of-type(1) ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 1rem 2rem;
+}
   
   nav:nth-of-type(1) li {
 	display: flex;
@@ -87,8 +103,30 @@ nav:nth-of-type(1) {
 	font-size: 1rem;
 	margin: 0;
   }
+
+  /* darkmode? */
+  nav:nth-of-type(1) ul li button img:first-child,
+  nav:nth-of-type(1) ul li button img:last-child {
+ height: auto;
+ width: auto;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  }
+
+    nav:nth-of-type(1) ul li button img:last-child {
+      display: none;
+    }
+
+   /* --white: #ffffff;
+  --black: #494949;
+  --grey: #ffffff;
+  --background: black;
+  --lightgrey: #ffffff; */
   
-/* hamburger */
+/* ******************* */
+/* HAMBURGER MENU */
+/* ******************* */
   nav:nth-of-type(1) ul li:first-child button {
     position: absolute;
     top: 1rem;
@@ -181,7 +219,9 @@ margin-right: 0.3rem;
 	outline: none;
   }
   
-/* Side menu */
+/* ******************* */
+/* HAMBURGER UITKLAP SIDE MENU */
+/* ******************* */
 nav:nth-of-type(2) {
   background-color: var(--background);
   height: 100vh;
@@ -227,7 +267,9 @@ hr {
 	width: 100%;
 }
 
-/* FOOTER */
+/* **********************************
+FOOTER
+*********************************** */
 footer {
   background-color: black;
   color: white;

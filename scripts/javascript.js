@@ -12,36 +12,76 @@ openMenu.addEventListener("click", () => {
     sideMenu.classList.toggle("active");
 });
 
-// Shortcuts (hulp van Lucas)
-document.addEventListener("keydown", function (event) {
-  if (event.key === "Escape") {
-    document.querySelector("footer").scrollIntoView({ behavior: "smooth" });
-  }
-});
 
-document.addEventListener("keydown", function (event) {
-  if (event.key === "a" || event.key === "A") {
-    window.location.href = "about.html";
-  }
-});
+// Light dark mode
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ********************************************
+// CODES VAN VORIG JAAR NIET MEER GEBRUIKEN
+// ********************************************
 
 //   light dark mode van vorig jaar (student assistent)
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("theme-form");
-  form.addEventListener("change", (e) => {
-    document.body.dataset.theme = e.target.value;
-  });
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//   const form = document.getElementById("theme-form");
+//   form.addEventListener("change", (e) => {
+//     document.body.dataset.theme = e.target.value;
+//   });
+// });
+
+// Shortcuts (hulp van Lucas)
+// document.addEventListener("keydown", function (event) {
+//   if (event.key === "Escape") {
+//     document.querySelector("footer").scrollIntoView({ behavior: "smooth" });
+//   }
+// });
+// document.addEventListener("keydown", function (event) {
+//   if (event.key === "a" || event.key === "A") {
+//     window.location.href = "about.html";
+//   }
+// });
 
 // Scroll animatie met button
-const scrollButton = document.querySelector("footer > section:nth-of-type(6)");
-if (scrollButton) {
-  scrollButton.onclick = function () {
-    const topElement = document.querySelector("nav");
-    if (topElement) {
-      topElement.scrollIntoView({ behavior: "smooth" });
-    } else {
-      console.error("Element with ID 'top' not found.");
-    }
-  };
-}
+// const scrollButton = document.querySelector("footer > section:nth-of-type(6)");
+// if (scrollButton) {
+//   scrollButton.onclick = function () {
+//     const topElement = document.querySelector("nav");
+//     if (topElement) {
+//       topElement.scrollIntoView({ behavior: "smooth" });
+//     } else {
+//       console.error("Element with ID 'top' not found.");
+//     }
+//   };
+// }

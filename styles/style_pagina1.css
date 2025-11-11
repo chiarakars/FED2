@@ -1,3 +1,6 @@
+/* ******************* */
+/* SECTIE 1: HOMEPAGE */
+/* ******************* */
 main > section:first-of-type {
   position: relative;
   height: 100vh;
@@ -58,7 +61,9 @@ main > section:first-of-type p {
   color: var(--grey);
 }
 
-/* SECTIE 2 */
+/* ******************* */
+/* SECTIE 2: DE DRIE MODELLEN */
+/* ******************* */
 main > section:nth-of-type(2) {
   display: flex;
   flex-direction: column;
@@ -128,7 +133,9 @@ main > section:nth-of-type(3) {
   padding-bottom: 2rem;
 }
 
-/* SECTIE 3 */
+/* ******************* */
+/* SECTIE 3: CARROUSEL */
+/* ******************* */
 main > section:nth-of-type(3) {
   text-align: center;
   overflow: hidden;
@@ -227,7 +234,9 @@ main > section:nth-of-type(3) > ul:last-of-type > li {
   background-color: var(--grey);
 }
 
-/* SECTIE 4 */
+/* ******************* */
+/* SECTIE 4: BASIC SECTIE: PORSCHE CENTRUM */
+/* ******************* */
 main > section:nth-of-type(4) {
   display: grid;
   margin: 2em;

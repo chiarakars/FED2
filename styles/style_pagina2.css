@@ -4,6 +4,9 @@
     --grey: #afb0b3;
   }
   
+/* ******************* */
+/* SECTIE 1: HOMEPAGE */
+/* ******************* */
   main > section:nth-of-type(1) {
     position: relative;
     height: 100vh;
@@ -54,20 +57,20 @@
     text-align: center;
   }
 
-  /* SECTIE 2 */
+/* ******************* */
+/* SECTIE 2: 911 TURBOS (CARROUSEL) */
+/* ******************* */
   main > section:nth-of-type(2) {
     position: relative;
     background-color: var(--black);
     color: var(--white);
     text-align: center;
     padding: 2rem 1rem 4rem;
-    overflow: hidden;
   }
 
   main > section:nth-of-type(2) img:first-of-type {
     width: 100%;
     height: auto;
-    display: block;
     margin: 0 auto 1rem;
   }
 
@@ -136,7 +139,6 @@
     border-radius: 0.5rem;
     text-decoration: none;
     text-align: center;
-    transition: background-color 0.3s;
   }
 
   main > section:nth-of-type(2) a:nth-of-type(2) {
@@ -153,13 +155,19 @@
   }
 
   main > section:nth-of-type(2) {
-    background-color: var(--black);
+    background-color: var(--black); 
     color: var(--white);
     text-align: center;
     padding: 3rem 1rem;
   }
   
-/* SECTIE 3 */
+/* ******************* */
+/* SECTIE 3: TECHNISCHE DETAILS */
+/* ******************* */
+main > section:nth-of-type(3) {
+  background-color: var(--black);
+  padding: 2rem;
+}
   main > section:nth-of-type(3) img {
     width: 100%;
     height: auto;
@@ -185,6 +193,7 @@
     font-size: 2.5rem;
     font-weight: 500;
     margin: 0;
+    color: var(--white);
   }
   
   main > section:nth-of-type(3) p {
@@ -195,9 +204,6 @@
   }
   
   main > section:nth-of-type(3) a {
-    display: inline-block;
-    margin-top: 3rem;
-    padding: 1rem 2rem;
     border: 1.5px solid var(--white);
     border-radius: 0.3rem;
     color: var(--white);
@@ -205,10 +211,24 @@
     font-size: 1rem;
   }
 
-  /* SECTIE 6 */
+/* ******************* */
+/* SECTIE 4: TURBO S: TYPISCH TURBO */
+/* ******************* */
+  main > section:nth-of-type(4) img {
+    max-width: 100%;
+    border-radius: 1rem;
+  }
+
+  main > section:nth-of-type(4) h3 {
+    font-weight: 600;
+  }
+
+/* ******************* */
+/* SECTIE 4: TURBO S: TYPISCH TURBO */
+/* SECTIE 5: BRANDSTOFVERBRUIK EN UITSTOOT */
+/* ******************* */
   main > section:nth-of-type(4),
-  main > section:nth-of-type(5),
-  main > section:nth-of-type(6) {
+  main > section:nth-of-type(5) {
     background-color: var(--white);
     color: var(--black);
     padding: 3rem 1.5rem;
@@ -217,8 +237,7 @@
   }
   
   main > section:nth-of-type(4) h3,
-  main > section:nth-of-type(5) h3,
-  main > section:nth-of-type(6) h3 {
+  main > section:nth-of-type(5) h3 {
     font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
@@ -226,16 +245,14 @@
   }
   
   main > section:nth-of-type(4) h4,
-  main > section:nth-of-type(5) h4,
-  main > section:nth-of-type(6) h4 {
+  main > section:nth-of-type(5) h4 {
     font-size: 1rem;
     font-weight: 700;
     margin: 1rem 0 0.3rem 0;
   }
   
   main > section:nth-of-type(4) p,
-  main > section:nth-of-type(5) p,
-  main > section:nth-of-type(6) p {
+  main > section:nth-of-type(5) p {
     font-size: 0.95rem;
     line-height: 1.6;
     margin: 0;
