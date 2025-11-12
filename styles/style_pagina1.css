@@ -5,10 +5,10 @@ main > section:first-of-type {
   position: relative;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   text-align: center;
-  flex-direction: column;
+  justify-content: flex-end;
 }
 
 main > section:first-of-type img {
@@ -31,9 +31,9 @@ main > section:first-of-type::after {
 main > section:first-of-type h1,
 main > section:first-of-type a,
 main > section:first-of-type p {
-  position: absolute;
   color: var(--white);
   line-height: 1.5;
+  margin: 0;
 }
 
 main > section:first-of-type h1 {
@@ -41,15 +41,15 @@ main > section:first-of-type h1 {
   color: var(--white);
   font-size: 2.5rem;
   font-weight: 400;
-  text-align: center;
 }
 
 main > section:first-of-type a {
   border-radius: 0.3rem;
-  padding: 0.8rem 2rem;
+  padding: 0.8rem 4.5rem;
   transition: all 0.2s ease;
   color: var(--white);
   border: 0.1rem solid;
+  margin:1rem;
 }
 
 main > section:first-of-type a:hover {
@@ -62,8 +62,7 @@ main > section:first-of-type p {
   max-width: 90%;
   line-height: 1.4;
   color: var(--grey);
-  position: relative;
-  text-align: center;
+  margin-bottom: 6rem;
 }
 
 /* ******************* */

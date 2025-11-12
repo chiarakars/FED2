@@ -103,26 +103,6 @@ nav:nth-of-type(1) ul {
 	font-size: 1rem;
 	margin: 0;
   }
-
-  /* darkmode? */
-  nav:nth-of-type(1) ul li button img:first-child,
-  nav:nth-of-type(1) ul li button img:last-child {
- height: auto;
- width: auto;
- display: flex;
- justify-content: center;
- align-items: center;
-  }
-
-    nav:nth-of-type(1) ul li button img:last-child {
-      display: none;
-    }
-
-   /* --white: #ffffff;
-  --black: #494949;
-  --grey: #ffffff;
-  --background: black;
-  --lightgrey: #ffffff; */
   
 /* ******************* */
 /* HAMBURGER MENU */
