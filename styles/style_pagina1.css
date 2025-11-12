@@ -4,7 +4,11 @@
 main > section:first-of-type {
   position: relative;
   height: 100vh;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
 }
 
 main > section:first-of-type img {
@@ -12,7 +16,6 @@ main > section:first-of-type img {
   height: 100%;
   object-fit: cover;
   position: absolute;
-  inset: 0;
   z-index: -2;
 }
 
@@ -25,17 +28,15 @@ main > section:first-of-type::after {
   z-index: -1;
 }
 
-main > section:first-of-type h2,
+main > section:first-of-type h1,
 main > section:first-of-type a,
 main > section:first-of-type p {
   position: absolute;
   color: var(--white);
   line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-align: center;
 }
 
-main > section:first-of-type h2 {
+main > section:first-of-type h1 {
   bottom: 5.2em;
   font-size: 2.5rem;
   font-weight: 400;
@@ -50,7 +51,6 @@ main > section:first-of-type a {
   font-size: 1em;
   text-decoration: none;
   border-radius: 0.2rem;
-  display: inline-block;
 }
 
 main > section:first-of-type p {
@@ -83,7 +83,6 @@ main > section:nth-of-type(2) article img:first-of-type {
   width: 100%;
   height: auto;
   display: block;
-  object-fit: cover;
 }
 
 /* titel en pijl */
@@ -127,111 +126,117 @@ main > h2 {
   font-weight: 400;
 }
 
-main > section:nth-of-type(3) {
-  text-align: center;
-  overflow: hidden;
-  padding-bottom: 2rem;
-}
-
 /* ******************* */
 /* SECTIE 3: CARROUSEL */
 /* ******************* */
-main > section:nth-of-type(3) {
-  text-align: center;
-  overflow: hidden;
-  padding-bottom: 2rem;
-}
-
-main > section:nth-of-type(3) > ul:first-of-type {
+main > section:nth-of-type(3) ul {
+  padding: 1rem;
   display: flex;
-  overflow-x: auto;
   gap: 1rem;
-  padding: 2rem;
   margin: 0;
-  list-style: none;
+  /* bron: codepen sanne */
+  overflow: auto;
+  scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  scroll-snap-type: x mandatory; /*per slide staan */
+  overscroll-behavior-x: contain;
+  anchor-name: --carousel; /* anker voor scroll-marker groep */
+  list-style-type: "";
 }
 
-/*slide*/
-main > section:nth-of-type(3) > ul:first-of-type > li {
-  min-width: 95%;
+main > section:nth-of-type(3) ul {
+  scroll-marker-group: after;
+}
+
+/* groep bolletjes */
+main > section:nth-of-type(3) ul::scroll-marker-group {
+  position: fixed;
+  position-anchor: --carousel;
+  position-area: block-end; /* onder de carousel */
+  position-visibility: always;
+  margin: .5rem;
+
+  display: grid;
+  grid-auto-columns: 1rem;
+  grid-auto-flow: column;
+  gap: .5rem;
+  
+  border-radius: 5rem;
+  background-color: rgba(38, 38, 42);
+  padding: 1rem;
+}
+
+/* los bolletje */
+main > section:nth-of-type(3) ul > li::scroll-marker {
+  content: "" / attr(data-label);
+  width: .6em;
+  height: .6em;
+  background-color: rgba(100, 100, 103);
+  border-radius: 50%;
+}
+
+main > section:nth-of-type(3) ul > li::scroll-marker:target-current {
+  background: white;
+}
+
+main > section:nth-of-type(3) ul li {
+  list-style: none;
   position: relative;
-  border-radius: 1rem;
-  overflow: hidden;
-  scroll-snap-align: center; /*per slide staan */
+  flex-basis: 16em;
+  flex-shrink: 0;
+  scroll-snap-align: center;
 }
 
-main > section:nth-of-type(3) > ul:first-of-type > li img:first-of-type {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+main > section:nth-of-type(3) ul li img:first-of-type {
+  max-width: 20em;
+  border-radius: 1rem;
   display: block;
+  z-index: 0;
+  height: auto;
+  object-fit: cover;
+}
+
+main > section:nth-of-type(3) ul li label,
+main > section:nth-of-type(3) ul li p,
+main > section:nth-of-type(3) ul li img:last-of-type {
+  color: var(--white);
+  position: absolute;
+  z-index: 1;
+  padding: 1rem;
+}
+
+main > section:nth-of-type(3) ul li label {
+  background-color: var(--grey);
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  font-size: 0.8rem;
+  left: 1rem;
+  bottom: 7rem;
+}
+
+main > section:nth-of-type(3) ul li p:nth-of-type(1) {
+  bottom: 3rem;
+  margin: 0;
+  line-height: 1rem;
+}
+
+main > section:nth-of-type(3) ul li p:nth-of-type(2) {
+  bottom: 0.5rem;
+  margin: 0;
+}
+
+main > section:nth-of-type(3) ul li img:last-of-type {
+  bottom: 0.9rem;
+  left: 3.5rem;
+  max-width: 1rem;
 }
 
 main > section:nth-of-type(3) > ul:first-of-type > li::after {
   content: "";
   position: absolute;
   inset: 0;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 10%, transparent 60%);
-}
-
-main > section:nth-of-type(3) > ul:first-of-type > li button,
-main > section:nth-of-type(3) > ul:first-of-type > li p,
-main > section:nth-of-type(3) > ul:first-of-type > li img:last-of-type {
-  position: absolute;
-  z-index: 2;
-  color: var(--white);
-  margin: 0;
-}
-
-/* label */
-main > section:nth-of-type(3) > ul:first-of-type > li button {
-  bottom: 6rem;
-  left: 1.2rem;
-  background-color: rgba(99, 99, 99, 0.6);
-  border: none;
-  border-radius: 0.3rem;
-  padding: 0.3rem 0.6rem;
-  font-size: 0.8rem;
-}
-
-main > section:nth-of-type(3) > ul:first-of-type > li p:first-of-type {
-  bottom: 4rem;
-  left: 1.2rem;
-  font-size: 1rem;
-  text-align: left;
-  max-width: 80%;
-}
-
-/* ontdek tekst */
-main > section:nth-of-type(3) > ul:first-of-type > li p:last-of-type {
-  bottom: 1.5rem;
-  left: 1.2rem;
-  font-weight: 400;
-}
-
-main > section:nth-of-type(3) > ul:first-of-type > li img:last-of-type {
-  bottom: 1.7rem;
-  left: 5rem;
-  width: 1rem;
-}
-
-/* slider carrousel */
-main > section:nth-of-type(3) > ul:last-of-type {
-  display: flex;
-  justify-content: center;
-  gap: 0.6rem;
-  list-style: none;
-  padding: 0;
-  margin-left: 1rem;
-}
-
-main > section:nth-of-type(3) > ul:last-of-type > li {
-  width: 0.7rem;
-  height: 0.7rem;
-  border-radius: 90%;
-  background-color: var(--grey);
 }
 
 /* ******************* */
@@ -239,7 +244,7 @@ main > section:nth-of-type(3) > ul:last-of-type > li {
 /* ******************* */
 main > section:nth-of-type(4) {
   display: grid;
-  margin: 2em;
+  margin: 6rem 2em;
   background-color: var(--black);
   border-radius: 1rem;
 }
