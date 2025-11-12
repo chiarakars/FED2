@@ -290,6 +290,11 @@ footer button {
   font-weight: 500;
 }
 
+footer button:hover,
+footer section ul li:hover {
+  background-color: rgba(175, 176, 179);
+}
+
 footer section ul {
   list-style: none;
   display: flex;
