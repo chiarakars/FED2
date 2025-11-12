@@ -205,6 +205,12 @@ padding: .8rem 5rem;
 margin: 1.5rem;
 }
 
+main > section:nth-of-type(3) a:hover {
+background-color: rgba(38, 38, 41);
+border: .1rem solid rgba(136, 137, 140);
+transition: all 0.2s ease;
+}
+
 /* ******************************** */
 /* SECTIE 4: TURBO S: TYPISCH TURBO */
 /* ******************************** */
