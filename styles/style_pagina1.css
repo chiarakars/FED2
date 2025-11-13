@@ -19,7 +19,7 @@ main > section:first-of-type img {
   z-index: -2;
 }
 
-/* W3 schools */
+/* bron W3 schools */
 main > section:first-of-type::after {
   content: "";
   position: absolute;
@@ -49,7 +49,7 @@ main > section:first-of-type a {
   transition: all 0.2s ease;
   color: var(--white);
   border: 0.1rem solid;
-  margin:1rem;
+  margin: 1rem;
 }
 
 main > section:first-of-type a:hover {
@@ -65,10 +65,17 @@ main > section:first-of-type p {
   margin-bottom: 6rem;
 }
 
-/* ******************* */
+/* *************************** */
 /* SECTIE 2: DE DRIE MODELLEN */
-/* ******************* */
-/* display grid: bron https://codepen.io/shooft/pen/vENpBKR?editors=1100  */
+/* *************************** */
+/* display grid (les opdracht): bron https://codepen.io/shooft/pen/vENpBKR?editors=1100  */
+
+/* darkmode button  */
+main > section:nth-of-type(2) button {
+  background-color: black;
+  border-radius: 3rem;
+}
+
 main > section:nth-of-type(2) {
 margin: 1.5rem;
 }
@@ -135,8 +142,8 @@ main > section:nth-of-type(2) p {
 
 main > section:nth-of-type(2) article::after {
   content: "";
-  grid-column: 1 / -1; /* 🔥 zelfde als het plaatje */
-  grid-row: 1;          /* 🔥 zelfde als het plaatje */
+  grid-column: 1 / -1;
+  grid-row: 1;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 10%, transparent 30%);
   z-index: 1;
   border-radius: .8rem;
@@ -266,6 +273,7 @@ main > section:nth-of-type(3) > ul:first-of-type > li::after {
 /* ******************* */
 main > section:nth-of-type(4) {
   display: grid;
+  flex-direction: column;
   margin: 6rem 2em;
   background-color: var(--black);
   border-radius: 1rem;

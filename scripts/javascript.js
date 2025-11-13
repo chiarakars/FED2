@@ -1,7 +1,7 @@
 // Hamburger menu
 const openMenu = document.querySelector("nav:nth-of-type(1) ul li:first-child");
 const sideMenu = document.querySelector("nav:nth-of-type(2)");
-const closeMenu = document.querySelector("  nav:nth-of-type(2) ul li:first-child");
+const closeMenu = document.querySelector("nav:nth-of-type(2) ul li:first-child");
 
 openMenu.addEventListener("click", () => {
   openMenu.classList.toggle("active");
@@ -13,10 +13,19 @@ openMenu.addEventListener("click", () => {
 });
 
 
-// Light dark mode
+// Light dark mode (hulp van Lara)
+const darkButton = document.querySelector("main > section:nth-of-type(2) button");
+const body = document.body;
 
+darkButton.addEventListener("click", () => {
+  const currentTheme = body.getAttribute("data-theme");
 
-
+if (currentTheme === "dark") {
+  body.setAttribute("data-theme", "light");
+} else {
+  body.setAttribute("data-theme", "dark");
+}
+});
 
 
 
