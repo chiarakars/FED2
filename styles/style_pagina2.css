@@ -58,7 +58,9 @@ main > section:nth-of-type(1) p {
 /* ******************************** */
 
 main > section:nth-of-type(2) {
+  position: relative;
   background-color: var(--black);
+  width: 100%;
   padding: 18rem 0 4rem 0;
   display: flex;
   flex-direction: column;
@@ -72,13 +74,41 @@ main > section:nth-of-type(2) img {
 main > section:nth-of-type(2) ul {
   display: flex;
   list-style: none;
-}
-
-main > section:nth-of-type(2) ul li {
-}
-
-main > section:nth-of-type(2) ul li h5 {
+  max-width: auto;
   color: var(--white);
+  overflow-x: auto;
+  padding: 0 1rem;
+
+}
+
+/* main > section:nth-of-type(2) ul li {
+  color: var(--white);
+  padding: 0;
+  margin: 0;
+} */
+
+main > section:nth-of-type(2) ul li a {
+  color: var(--white);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: .5rem;
+  justify-content: space-between;
+    z-index: 1;
+}
+
+main > section:nth-of-type(2) ul li a:hover {
+  background-color: rgba(33, 34, 37);
+  padding: .2rem;
+  border-radius: 0.2rem;
+}
+
+main > section:nth-of-type(2) ul li img {
+    background-color: rgba(33, 34, 37);
+  padding: .2rem;
+  border-radius: 0.2rem;
+  padding: .2rem .6rem;
+    z-index: 2;
 }
 
 main > section:nth-of-type(2) h2 {
@@ -102,23 +132,23 @@ main > section:nth-of-type(2) a {
   transition: all 0.2s ease;
 }
 
-main > section:nth-of-type(2) a:first-of-type {
+main > section:nth-of-type(2) > a:first-of-type {
   color: var(--black);
   background-color: var(--white);
 }
 
-main > section:nth-of-type(2) a:first-of-type:hover {
+main > section:nth-of-type(2) > a:first-of-type:hover {
   background-color: rgba(175, 176, 179);
 }
 
-main > section:nth-of-type(2) a:nth-of-type(2),
-main > section:nth-of-type(2) a:last-of-type {
+main > section:nth-of-type(2) > a:nth-of-type(2),
+main > section:nth-of-type(2) > a:last-of-type {
   color: var(--white);
   border: 0.1rem solid;
 }
 
-main > section:nth-of-type(2) a:nth-of-type(2):hover,
-main > section:nth-of-type(2) a:last-of-type:hover {
+main > section:nth-of-type(2) > a:nth-of-type(2):hover,
+main > section:nth-of-type(2) > a:last-of-type:hover {
   background-color: rgba(38, 38, 41);
   border: 0.1rem solid rgba(136, 137, 140);
 }
