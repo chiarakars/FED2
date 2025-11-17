@@ -69,7 +69,8 @@ Voice Over:
 - Noemt alle onderdelen van carousel en slide daarna verder
 - Afbeeldingen hebben alt teksten
 - Video's hebben alt teksten
-  
+
+  WCAG:
 
  <img src="./readme-images/IMG_0298.png" width="375px" alt="Foto WCAG checklist">
  <img src="./readme-images/IMG_0299.png" width="375px" alt="Foto WCAG checklist">
