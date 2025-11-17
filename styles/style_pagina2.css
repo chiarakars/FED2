@@ -31,7 +31,11 @@ main > section:nth-of-type(1)::after {
   inset: 0;
   height: 100%;
   background: linear-gradient(
-    to top,rgba(0, 0, 0, 1) 0%,rgba(0, 0, 0, 0.3) 70%,transparent 100%);
+    to top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.3) 70%,
+    transparent 100%
+  );
   z-index: -1;
 }
 
@@ -67,48 +71,84 @@ main > section:nth-of-type(2) {
   text-align: center;
 }
 
-main > section:nth-of-type(2) img {
-  max-width: 100%;
-}
-
 main > section:nth-of-type(2) ul {
   display: flex;
   list-style: none;
   max-width: auto;
   color: var(--white);
   overflow-x: auto;
-  padding: 0 1rem;
-
-}
-
-/* main > section:nth-of-type(2) ul li {
-  color: var(--white);
   padding: 0;
-  margin: 0;
-} */
+  gap: 1.5rem;
+  margin: 1.5rem;
+  scroll-behavior: smooth;
+}
 
 main > section:nth-of-type(2) ul li a {
   color: var(--white);
   padding: 0;
   margin: 0;
-  display: flex;
-  gap: .5rem;
+  display: inline-flex;
+  gap: 0.5rem;
   justify-content: space-between;
-    z-index: 1;
+  z-index: 1;
 }
+
+main > section:nth-of-type(2) ul::-webkit-scrollbar {
+  display: none;
+}
+
+main > section:nth-of-type(2) ul::scroll-button(right) {
+  content:'>';
+    background-color: rgba(33, 34, 37);
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+      color: var(--white);
+    width: 8%;
+  height: 10%;
+}
+
+main > section:nth-of-type(2) ul::scroll-button(left) {
+  content:'<';
+  color: var(--white);
+      background-color: rgba(33, 34, 37);
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+    width: 8%;
+  height: 10%;
+}
+
+main > section:nth-of-type(2) img:first-of-type {
+  max-width: 100%;
+}
+
+/* main > section:nth-of-type(2) img:nth-of-type(2),
+main > section:nth-of-type(2) img:nth-of-type(3) {
+  position: sticky;
+  z-index: 2;
+  width: 3%;
+  height: 3%;
+  background-color: rgba(33, 34, 37);
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+} */
+
+/* main > section:nth-of-type(2) img:nth-of-type(2) {
+  left: .5rem;
+}
+
+main > section:nth-of-type(2) img:nth-of-type(3) {
+  right: .5rem;
+} */
 
 main > section:nth-of-type(2) ul li a:hover {
   background-color: rgba(33, 34, 37);
-  padding: .2rem;
+  padding: 0.2rem;
   border-radius: 0.2rem;
 }
 
-main > section:nth-of-type(2) ul li img {
-    background-color: rgba(33, 34, 37);
-  padding: .2rem;
-  border-radius: 0.2rem;
-  padding: .2rem .6rem;
-    z-index: 2;
+main > section:nth-of-type(2) ul li:nth-of-type(5) a {
+  text-decoration: underline;
+  text-decoration-color: var(--white);
 }
 
 main > section:nth-of-type(2) h2 {
@@ -155,7 +195,7 @@ main > section:nth-of-type(2) > a:last-of-type:hover {
 
 main > section:nth-of-type(2) label {
   background-color: rgba(33, 34, 37);
-  padding: .2rem;
+  padding: 0.2rem;
   border-radius: 0.2rem;
   font-size: 0.8rem;
   width: fit-content;

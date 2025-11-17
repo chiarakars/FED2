@@ -45,6 +45,20 @@ if (video.paused == true) {
 }
 });
 
+// Carrousel pagina 2 Turbo S 911
+const carousel = document.querySelector("main > section:nth-of-type(2) ul");
+const leftArrow = document.querySelector("main > section:nth-of-type(2) ul img:first-of-type");
+const rightArrow = document.querySelector("main > section:nth-of-type(2) ul img:last-of-type");
+
+leftArrow.addEventListener("click", () => {
+carousel.scrollLeft = 0;
+});
+
+rightArrow.addEventListener("click", () => {
+carousel.scrollLeft= carousel.scrollWidth;
+});
+
+
 
 
 
