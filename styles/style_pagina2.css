@@ -57,6 +57,17 @@ main > section:nth-of-type(1) p {
   text-align: center;
 }
 
+main > section:nth-of-type(1) button {
+  position: fixed;
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 2rem;
+align-self: first baseline;
+z-index: 10;
+margin: 1rem;
+bottom: .5rem;
+}
+
 /* ******************************** */
 /* SECTIE 2: 911 TURBOS (CARROUSEL) */
 /* ******************************** */
@@ -81,6 +92,7 @@ main > section:nth-of-type(2) ul {
   gap: 1.5rem;
   margin: 1.5rem;
   scroll-behavior: smooth;
+  anchor-name: --carrousel;
 }
 
 main > section:nth-of-type(2) ul li a {
@@ -93,52 +105,51 @@ main > section:nth-of-type(2) ul li a {
   z-index: 1;
 }
 
+/* scroll buttons bron https://www.youtube.com/watch?v=gmI5nvzv170  */
 main > section:nth-of-type(2) ul::-webkit-scrollbar {
   display: none;
 }
 
 main > section:nth-of-type(2) ul::scroll-button(right) {
-  content:'>';
-    background-color: rgba(33, 34, 37);
+  content: ">";
+  position: absolute;
+  /* position-anchor: --carousel;
+  position-area: right center; */
+  background-color: rgba(33, 34, 37);
   padding: 0.2rem;
   border-radius: 0.2rem;
-      color: var(--white);
-    width: 8%;
-  height: 10%;
+  color: var(--white);
+  width: 8%;
+  height: 3%;
+  right: 2rem;
+  top: 42%;
+  translate: 50%;
 }
 
 main > section:nth-of-type(2) ul::scroll-button(left) {
-  content:'<';
+  content: "<";
+  position: absolute;
+  /* position-anchor: --carousel;
+  position-area: left center; */
   color: var(--white);
-      background-color: rgba(33, 34, 37);
+  background-color: rgba(33, 34, 37);
   padding: 0.2rem;
   border-radius: 0.2rem;
-    width: 8%;
-  height: 10%;
+  width: 8%;
+  height: 3%;
+  left: 2rem;
+  top: 42%;
+  translate: -50%;
+}
+
+main > section:nth-of-type(2) ul::scroll-button(right):disabled,
+main > section:nth-of-type(2) ul::scroll-button(left):disabled {
+  opacity: 0;
 }
 
 main > section:nth-of-type(2) img:first-of-type {
   max-width: 100%;
 }
-
-/* main > section:nth-of-type(2) img:nth-of-type(2),
-main > section:nth-of-type(2) img:nth-of-type(3) {
-  position: sticky;
-  z-index: 2;
-  width: 3%;
-  height: 3%;
-  background-color: rgba(33, 34, 37);
-  padding: 0.2rem;
-  border-radius: 0.2rem;
-} */
-
-/* main > section:nth-of-type(2) img:nth-of-type(2) {
-  left: .5rem;
-}
-
-main > section:nth-of-type(2) img:nth-of-type(3) {
-  right: .5rem;
-} */
 
 main > section:nth-of-type(2) ul li a:hover {
   background-color: rgba(33, 34, 37);
