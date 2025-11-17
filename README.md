@@ -256,28 +256,24 @@ LAATSTE LES
 
 
 
-## Eindgesprek (week 5) (=> Laatste voortgangsgesprek)
+## Laatste voortgangsgesprek (nog geen eindgesprek)
 
 <details>
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+
 Ik ben het meest trots op mijn hamburger menu. Dit was vorig jaar de hoofdoorzaak waarom ik het vak niet had gehaald, en nu is dat wel gelukt! Het heeft me wel lang geduurd in totaal, zo'n 6 uur gok ik. Ik wilde namelijk een transition in de icon van hamburger naar kruisje - wat gelukt was, maar niet lukte met z-index om het op de juiste plek te krijgen. Vooral dat laatste heeft mij echt veel tijd gekost om erachter te komen waar het aan ligt. Uiteindelijk heb ik het menu op de manier gedaan als hoe het op de originele site is. 
 
 
 Ook heb ik vorig jaar overal (ja, echt overal) gebruik gemaakt van classes. Ik wist niet eens hoe het op een andere manier kon, en nu kon ik tutorials volgen waarbij er classes werden gebruikt en ik dat zelf kon implementeren met elementen als nth-of-type en de juiste aanspreekpunten. Het duurde even tot ik dit helemaal onder de knie had, maar toen ik het eenmaal begreep was het heel chill toe te passen. Wel vind ik het op deze manier wat lastiger terug vinden wat je precies aanspreekt, maar met kleine tekstjes er zelf bij gezet, werkte het prima!
 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
-
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
 
   Zoals ik hierboven heb geschreven heeft de animatie van het hamburgermenu naar kruisje mij lang gekost. De animatie zelf lukte al snel met de tutorial, maar de plaatsing ervan niet. Hetgeen waar ik tegenaan liep was was de z-index. Het menu stond op de juiste plek, maar zodra de sidemenu uitklapte kwam het erachter te staan of kwam de volledige nav bar erop te staan - niet enkel de hamburger. ik heb hierbij de hulp van chat ingeschakeld en hele specifieke prompts gegeven, maar ook dit hielp niet. Het is me ook niet meer gelukt om erachter te komen, jammer, want ik ben nu wel erg benieuwd. (ik heb de code hiervan onderin mijn css laten staan om te laten zien dat ik hier actief mee aan de slag ben gegaan, ondanks het resultaat niet is geworden als hoe ik zou willen)
 
@@ -293,7 +289,15 @@ Op basis van mijn laatste voortgangsgesprek ben ik nog hard aan de bak gegaan. I
 Ik heb feedback gekregen over de verwachtingen van surface plane en na het gesprek heb ik hier gelijk een to do list van gemaakt. Zo had ik overzicht voor mijzelf wat er nog allemaal gedaan moest worden. 
 
 
-  
+  ### Je uitkomst - karakteristiek screenshots:
+
+
+  ### Dit ging goed/Heb ik geleerd:
+  Ik ben het meest trots op niet persee een specofiek onderdeel van mijn website, maar dat ik het idee heb dat ik het daadwerkelijk begrijp. Ik heb vorig jaar moeite gehad met dit vak en ook dit jaar vond ik het lastig, met name omdat ik de kennis van vorig jaar niet meer kon toepassen en een nieuwe werkwijze moest gebruiken (geen classes, div's etc). Ik heb veel nieuwe kennis opgedaan en dit ook kunnen toepassen. Op een gegeven moment hoefde ik niet telkens meer naar voorgaande codes terug te kijken tijdens het coderen, omdat ik eindelijk grip had op wanneer je welk element gebruikt en hoe je dat aanspreekt. Vanaf dat moment vond ik het ook leuker worden. Ik denk dat ik nu in staat ben om (de basis) van elke willekeurige website na te maken en dat idee vind ik best cool. 
+
+  ### Dit was lastig/Is niet gelukt:
+  Iets waar ik lang over heb gedaan is de carrousel. Ik heb een stuk om 6 verschillende tutorials volledig gekeken, codepen, andere sites ingelezen om erachter te komen hoe ik dit kon toepassen op mijn site. Hier heeft veel tijd ingezeten. Vooral op pagina 2 sectie 2 met de carrousel van de modelnamen was ik lang bezig. Dit vanwege de buttons. De juiste plaatsing ervan lukte maar niet en verschoven overal heen. Wanneer ik dan weer wat aanpaste verdwenen ze. Ik heb ze nu op de pagina vastgezet, in plaats van op basis van de carrousel. Dit lukte mij alleen door ze in de ul te plaatsen, maar dat is niet semantisch. Ik ben alsnog benieuwd hoe ik het wel kan doen!
+    
 </details> 
 
 
@@ -307,14 +311,23 @@ Ik heb feedback gekregen over de verwachtingen van surface plane en na het gespr
   Nb. Vermeld de bronnen ook in je code.
 
   1. Gradient nav: https://www.w3schools.com/css/css3_gradients.asp
-  2. .
-  3. 
-  4. Shortcuts (hulp van Lucas vorig jaar)
-  5. Hamburger menu: https://www.youtube.com/watch?v=aNDqzlAKmZc
+  2. video homepage:
+     https://www.w3schools.com/html/html5_video.asp 
+     https://stackoverflow.com/questions/39839884/creating-a-custom-play-button-for-a-video
+  3. Light dark mode: https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp 
+     https://www.youtube.com/watch?v=_gKEUYarehE
+  4. Hover buttons: https://www.w3schools.com/howto/howto_css_zoom_hover.asp 
+  5. Carrousel:
+     https://stackoverflow.com/questions/33005267/simple-html5-keyboard-navigation-for-elements
+     https://www.w3schools.com/jsref/met_win_scrollby.asp
+     https://codepen.io/shooft/pen/myVroQM 
+     https://www.w3schools.com/howto/howto_js_slideshow.asp
+  6. Scroll button: https://developer.mozilla.org/en-US/play?uuid=f65c3a450a1b82efee53cf11d8df960bcb8eb2f3&state=pVXNcpw4EH6VLlKpsrOWDeNNvKuZctXWXjbnXLkI0QyKhaSSxBiS8m2fIXmXPM4%2ByRYIGLBnXFTCBVB%2F3er%2B%2Bu9rVPpKRjTalcn9358%2BAWdW1w4lVLX0wkgE4bFyYNCCYXvc3ZTJfap2tbxPFcBOiv4NsCs39x89VpDsbspNEN4M0hOozSrU7SrU76tQ71ehPqxC3a1C%2FbEK9ecqVBKvg61jP1lHf7KO%2F2RdApIXGdjd9GUUXUXcuYhG7%2BBrJ810Q5z4ItSeQqZtjpZkutmm6ilVqcp03gZcxexeKArxtvsrtPKkYJWQLYU0%2BgflAb3gLI2uII3%2BsoLJ7tMx5YhDK4rRYJkEcx4bT5gUe0WBo%2FJoj3ad%2BIIUkus7i1XQq2XQehS5LykkcXx47PElin3pKdzGsWn6E8PyvA8mCSfdmT6gLaR%2BJA0Fx62WsoeGT%2BIUM8S3Bik0UDGVM69tO6hyLetKOQrJ9qzbT6mSIjgohfPE%2BVbiYFFphYOpXDgjWUtBKCkUkkxq%2FrCIIonjt9tZnJv4GEPG%2BMPe6lrlhGupLYU32D%2FbkMUucxQS04DTUuTwJu%2BfJSebkaUpm3Oa5sFJLPyYMymo8iXhpZD5BR5QXQ6l88Il3jI1ZozSwF3Azrk%2BwV8HHyBZ7b1WF%2B%2FGS4bI4uf1sQnVMXdjorvPW%2BdQJtnAsTaMC99SiK%2FvAqK2roMYLY5%2BnPaEll0FXZ0RFprXLjg7XZK8ao5xLw44NIJlyknmMSQvMc2rqrlwLJOYP7svvt4sgqqVQ3%2FeUJfdgV%2BulUfluy7%2B7%2Fu%2FaXReyXZFekLr24%2B5VpAzxUttiWIVUiCkasm4616LLuga7YQXWlFgmdOy9iGj4zEJtlebncVqQ5txJvlFsDJICdzFprkcWsl7XS1RXptL%2BA2S2wBaQVBnd2ljkP7cVYsmqph9QEu6mjcUWHG6eueoXyMWwGuz9DJ4vozmc%2B28KFriUBZ0rIDZbJ%2FmXyGxWWhM1TRD75mZ5tVinjwL8EU99sV4XBUfhok3zdjx4OX06lvRMIvKL4bqZhqqx3EyrErLclG7adlMOTjpKvXM7tETXtvujnNDdLzkqV%2FWn7tdHV1FvsQKIxrJLozo6X8%3D&srcPrefix=%2Fen-US%2Fdocs%2FWeb%2FCSS%2FGuides%2FOverflow%2FCarousels%2F
+  7. Shortcuts (hulp van Lucas vorig jaar) > hier keyfunctie elementen uit gehaald
+     javascript scroll: https://www.w3schools.com/jsref/met_win_scrollby.asp 
+  8. Hamburger menu: https://www.youtube.com/watch?v=aNDqzlAKmZc
      https://codepen.io/chiarakars/pen/KwVpxZR
-  6. .
-  7. .
-  8. .
-  9. Scroll animatie met button (met groepje vorig jaar)
+  9. Prefers-reduced-motion: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion
+
 
 </details>
