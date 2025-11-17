@@ -129,8 +129,6 @@ main > section:nth-of-type(2) ul::scroll-button(right) {
 main > section:nth-of-type(2) ul::scroll-button(left) {
   content: "<";
   position: absolute;
-  /* position-anchor: --carousel;
-  position-area: left center; */
   color: var(--white);
   background-color: rgba(33, 34, 37);
   padding: 0.2rem;
@@ -321,7 +319,7 @@ main > section:nth-of-type(4) img:nth-of-type(5) {
   justify-content: center;
   align-items: center;
   margin: auto;
-  transition: transform 0.8s ease-out; /* TO DO: js scroll ease */
+  transition: transform 0.8s ease-out;
 }
 
 main > section:nth-of-type(4) img:nth-of-type(3),

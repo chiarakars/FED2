@@ -85,14 +85,6 @@ scrollButton.addEventListener("click", () => {
 // CODES VAN VORIG JAAR NIET MEER GEBRUIKEN
 // ********************************************
 
-//   light dark mode van vorig jaar (student assistent)
-// document.addEventListener("DOMContentLoaded", () => {
-//   const form = document.getElementById("theme-form");
-//   form.addEventListener("change", (e) => {
-//     document.body.dataset.theme = e.target.value;
-//   });
-// });
-
 // Shortcuts (hulp van Lucas)
 // document.addEventListener("keydown", function (event) {
 //   if (event.key === "Escape") {
