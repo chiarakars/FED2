@@ -60,12 +60,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 - autoplay op homepage, wel pauzeer knop aanwezig (zelfde geldt voor carrousel)
 - over het algemeen responsive, alleen de footer slordig. tekst is niet leesbaar en buttons vallen buiten de view
+- geen darkmodus
 
 Voice Over:
 - begint goed bij de nav van links naar rechts
 - navigeert op logische wijze door de pagina heen
 - Homepage ('drie modellen') alleen pijltje als link aangegeven
-- 'Vind uw nieuwe Porsche' sectie wordt niet voorgelezen alleen de knop
+- Noemt alle onderdelen van carousel en slide daarna verder
 - Afbeeldingen hebben alt teksten
 - Video's hebben alt teksten
   
@@ -177,6 +178,22 @@ Voice Over:
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+
+Porsche: autoplay homepage
+Chiara: geen autoplay, onverwacht bewegende beelden kan trigger zijn > oplossing: zelf handmatig video aanzetten met knop rechtsonder in de homepage
+
+Porsche: footer slordig en tekst afgeknipt dus onleesbaar
+Chiara: footer volledig leesbaar en buttons responsive
+
+Porsche: geen darkmodus
+Chiara: wel darkmodus (note: staat op homepage, maar handiger in menu zodat je makkelijk kan aanpassen)
+
+  Voice Over:
+  - begint bij de nav van links naar rechts
+  - ziet hamburgermenu items als groep van naam + icon (hierdoor realisatie icon geen alt tekst maar naar # aanpassen)
+  - carrousel: gaat elk item af en scrollt dan zelf ook door naar de volgende. laatste list item afgerond = terug naar begin
+  - darkmode & pauze buttons als getal voorgelezen > alt tekst toegevoegd
+  - list decoratie nog niet weggehaald > nu wel en decoratie dus niet voorgelezen
 
  <img src="./readme-images/IMG_0298.png" width="375px" alt="Foto WCAG checklist">
  <img src="./readme-images/IMG_0299.png" width="375px" alt="Foto WCAG checklist">
