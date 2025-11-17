@@ -15,7 +15,9 @@ closeMenu.addEventListener("click", () => {
 });
 
 // Light dark mode (hulp van Lara)
-const darkButton = document.querySelector("main > section:first-of-type button:first-of-type");
+const darkButton = document.querySelector(
+  "main > section:first-of-type button:first-of-type"
+);
 const body = document.body;
 const darkImg = darkButton.querySelector("img");
 
@@ -32,18 +34,18 @@ darkButton.addEventListener("click", () => {
 });
 
 // Play button homepage background video
-const playButton = document.querySelector("main > section:first-of-type button:last-of-type");
+const button = document.querySelector("main > section:first-of-type button:last-of-type");
 const video = document.querySelector("main > section:first-of-type video");
 const img = playButton.querySelector("img");
 
-playButton.addEventListener("click", () => {
-  if (video.paused == true) {
-    video.play();
-    img.src = "images/play_white.png";
-  } else {
-    video.pause();
-    img.src = "images/pause_white.png";
-  }
+button.addEventListener("click", () => {
+if (video.paused == true) {
+  video.play();
+  img.src = "images/play_white.png";
+} else {
+  video.pause();
+   img.src = "images/pause_white.png";
+}
 });
 
 // Keybuttons carrousel (op basis van code vorig jaar maar aangepast)

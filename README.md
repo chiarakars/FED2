@@ -57,8 +57,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-<p>mogelijkheid video's op pauze zetten</p>
-<p>text to speech</p>
+
+- autoplay op homepage, wel pauzeer knop aanwezig (zelfde geldt voor carrousel)
+- over het algemeen responsive, alleen de footer slordig. tekst is niet leesbaar en buttons vallen buiten de view
+- geen darkmodus
+
+Voice Over:
+- begint goed bij de nav van links naar rechts
+- navigeert op logische wijze door de pagina heen
+- Homepage ('drie modellen') alleen pijltje als link aangegeven
+- Noemt alle onderdelen van carousel en slide daarna verder
+- Afbeeldingen hebben alt teksten
+- Video's hebben alt teksten
+  
 
  <img src="./readme-images/IMG_0298.png" width="375px" alt="Foto WCAG checklist">
  <img src="./readme-images/IMG_0299.png" width="375px" alt="Foto WCAG checklist">
@@ -168,6 +179,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+Porsche: autoplay homepage
+Chiara: geen autoplay, onverwacht bewegende beelden kan trigger zijn > oplossing: zelf handmatig video aanzetten met knop rechtsonder in de homepage
+
+Porsche: footer slordig en tekst afgeknipt dus onleesbaar
+Chiara: footer volledig leesbaar en buttons responsive
+
+Porsche: geen darkmodus
+Chiara: wel darkmodus (note: staat op homepage, maar handiger in menu zodat je makkelijk kan aanpassen)
+
+  Voice Over:
+  - begint bij de nav van links naar rechts
+  - ziet hamburgermenu items als groep van naam + icon (hierdoor realisatie icon geen alt tekst maar naar # aanpassen)
+  - carrousel: gaat elk item af en scrollt dan zelf ook door naar de volgende. laatste list item afgerond = terug naar begin
+  - darkmode & pauze buttons als getal voorgelezen > alt tekst toegevoegd
+  - list decoratie nog niet weggehaald > nu wel en decoratie dus niet voorgelezen
+
  <img src="./readme-images/IMG_0298.png" width="375px" alt="Foto WCAG checklist">
  <img src="./readme-images/IMG_0299.png" width="375px" alt="Foto WCAG checklist">
  <img src="./readme-images/IMG_0300.png" width="375px" alt="Foto WCAG checklist">
@@ -228,7 +255,7 @@ LAATSTE LES
 
 
 
-## Eindgesprek (week 5)
+## Eindgesprek (week 5) (=> Laatste voortgangsgesprek)
 
 <details>
   <summary>uitwerken voor eindgesprek</summary>
@@ -257,7 +284,16 @@ Ook heb ik vorig jaar overal (ja, echt overal) gebruik gemaakt van classes. Ik w
 </details>
 
 
+## Eindgesprek
 
+<details>
+
+Op basis van mijn laatste voortgangsgesprek ben ik nog hard aan de bak gegaan. Ik dacht dat ik op schema liep, maar kwam er tijdens dit gesprek achter dat ik veel te veel vasthield aan hetgeen dat ik vorig jaar tijdens FED heb geleerd. Ik was mij hier niet bewust van, maar ben daar dus gelukkig nog voor het eindgesprek achter gekomen. In dit voortgangsgesprek heb ik om veel feedback gevraagd en is het mij veel duidelijker geworden wat er van mij verwacht wordt. Ik heb hele delen code geschrapt en volledig opnieuw geschreven, deze keer volgens de regels van dit jaar. Ook had ik surface planes van vorig jaar letterlijk overgenomen (met de gedachte dat dat goed was), maar omdat het al een jaar geleden was kon de code ook niet meer uitleggen. Naar aanleiding van het gesprek heb ik dat dus ook veranderd. Sommige delen heb ik daarvan wel kunnen gebruiken, maar wel zelf aangepast met de kennis van nu en nog bronnen bijgezocht. 
+Ik heb feedback gekregen over de verwachtingen van surface plane en na het gesprek heb ik hier gelijk een to do list van gemaakt. Zo had ik overzicht voor mijzelf wat er nog allemaal gedaan moest worden. 
+
+
+  
+</details> 
 
 
 ## Bronnenlijst
@@ -270,13 +306,14 @@ Ook heb ik vorig jaar overal (ja, echt overal) gebruik gemaakt van classes. Ik w
   Nb. Vermeld de bronnen ook in je code.
 
   1. Gradient nav: https://www.w3schools.com/css/css3_gradients.asp
-  2. Scroll animatie debug: https://chatgpt.com/c/69011098-61e8-832c-b5d2-d25d12e82a80 > id zelf veranderd naar queryselector
-  3. HR: https://www.w3schools.com/howto/howto_css_style_hr.asp 
+  2. .
+  3. 
   4. Shortcuts (hulp van Lucas vorig jaar)
   5. Hamburger menu: https://www.youtube.com/watch?v=aNDqzlAKmZc
      https://codepen.io/chiarakars/pen/KwVpxZR
-  7. Carrousel (vorig jaar)
-  8. Light dark mode van vorig jaar (student assistent vorig jaar)
+  6. .
+  7. .
+  8. .
   9. Scroll animatie met button (met groepje vorig jaar)
 
 </details>
