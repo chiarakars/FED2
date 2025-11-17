@@ -14,22 +14,36 @@ openMenu.addEventListener("click", () => {
 
 
 // Light dark mode (hulp van Lara)
-const darkButton = document.querySelector("main > section:nth-of-type(2) button");
+const darkButton = document.querySelector("main > section:first-of-type button:first-of-type");
 const body = document.body;
+const darkImg = darkButton.querySelector("img");
 
 darkButton.addEventListener("click", () => {
   const currentTheme = body.getAttribute("data-theme");
 
 if (currentTheme === "dark") {
   body.setAttribute("data-theme", "light");
+    darkImg.src = "images/lightmode.png";
 } else {
   body.setAttribute("data-theme", "dark");
+    darkImg.src = "images/darkmode.png";
 }
 });
 
+// Play button homepage background video
+const button = document.querySelector("main > section:first-of-type button:last-of-type");
+const video = document.querySelector("main > section:first-of-type video");
+const img = button.querySelector("img");
 
-
-
+button.addEventListener("click", () => {
+if (video.paused == true) {
+  video.play();
+  img.src = "images/play_white.png";
+} else {
+  video.pause();
+   img.src = "images/pause_white.png";
+}
+});
 
 
 

@@ -6,8 +6,8 @@ main > section:first-of-type {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: left;
+  text-align: left;
   justify-content: flex-end;
 }
 
@@ -34,6 +34,7 @@ main > section:first-of-type p {
   color: var(--white);
   line-height: 1.5;
   margin: 0;
+  padding-left: 2rem;
 }
 
 main > section:first-of-type h1 {
@@ -49,7 +50,8 @@ main > section:first-of-type a {
   transition: all 0.2s ease;
   color: var(--white);
   border: 0.1rem solid;
-  margin: 1rem;
+  margin: 1rem 2rem;
+  text-align: center;
 }
 
 main > section:first-of-type a:hover {
@@ -57,24 +59,42 @@ main > section:first-of-type a:hover {
   border: 0.1rem solid rgba(136, 137, 140);
 }
 
+main > section:first-of-type button {
+  border-radius: 0.3rem;
+  padding: .2rem .5rem;
+  border: 0.15rem solid white;
+  z-index: 2;
+  align-self: flex-end;
+  margin: .4rem 1.7rem;
+  background-color: transparent;
+}
+
+main > section:first-of-type button:first-of-type {
+padding: 0 .08rem;
+}
+
+/* pause button */
+main > section:first-of-type button:first-of-type img:last-child {
+  display: none;
+}
+/* darkmode button */
+main > section:first-of-type button:last-of-type img:last-child {
+  display: none;
+}
+
 main > section:first-of-type p {
   font-size: 0.8em;
   max-width: 90%;
   line-height: 1.4;
   color: var(--grey);
-  margin-bottom: 6rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 /* *************************** */
 /* SECTIE 2: DE DRIE MODELLEN */
 /* *************************** */
 /* display grid (les opdracht): bron https://codepen.io/shooft/pen/vENpBKR?editors=1100  */
-
-/* darkmode button  */
-main > section:nth-of-type(2) button {
-  background-color: black;
-  border-radius: 3rem;
-}
 
 main > section:nth-of-type(2) {
 margin: 1.5rem;
