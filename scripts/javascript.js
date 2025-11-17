@@ -34,11 +34,11 @@ darkButton.addEventListener("click", () => {
 });
 
 // Play button homepage background video
-const button = document.querySelector("main > section:first-of-type button:last-of-type");
+const playButton = document.querySelector("main > section:first-of-type button:last-of-type");
 const video = document.querySelector("main > section:first-of-type video");
 const img = playButton.querySelector("img");
 
-button.addEventListener("click", () => {
+playButton.addEventListener("click", () => {
 if (video.paused == true) {
   video.play();
   img.src = "images/play_white.png";
