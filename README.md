@@ -228,7 +228,7 @@ LAATSTE LES
 
 
 
-## Eindgesprek (week 5)
+## Eindgesprek (week 5) (=> Laatste voortgangsgesprek)
 
 <details>
   <summary>uitwerken voor eindgesprek</summary>
@@ -257,7 +257,16 @@ Ook heb ik vorig jaar overal (ja, echt overal) gebruik gemaakt van classes. Ik w
 </details>
 
 
+## Eindgesprek
 
+<details>
+
+Op basis van mijn laatste voortgangsgesprek ben ik nog hard aan de bak gegaan. Ik dacht dat ik op schema liep, maar kwam er tijdens dit gesprek achter dat ik veel te veel vasthield aan hetgeen dat ik vorig jaar tijdens FED heb geleerd. Ik was mij hier niet bewust van, maar ben daar dus gelukkig nog voor het eindgesprek achter gekomen. In dit voortgangsgesprek heb ik om veel feedback gevraagd en is het mij veel duidelijker geworden wat er van mij verwacht wordt. Ik heb hele delen code geschrapt en volledig opnieuw geschreven, deze keer volgens de regels van dit jaar. Ook had ik surface planes van vorig jaar letterlijk overgenomen (met de gedachte dat dat goed was), maar omdat het al een jaar geleden was kon de code ook niet meer uitleggen. Naar aanleiding van het gesprek heb ik dat dus ook veranderd. Sommige delen heb ik daarvan wel kunnen gebruiken, maar wel zelf aangepast met de kennis van nu en nog bronnen bijgezocht. 
+Ik heb feedback gekregen over de verwachtingen van surface plane en na het gesprek heb ik hier gelijk een to do list van gemaakt. Zo had ik overzicht voor mijzelf wat er nog allemaal gedaan moest worden. 
+
+
+  
+</details> 
 
 
 ## Bronnenlijst
@@ -270,13 +279,14 @@ Ook heb ik vorig jaar overal (ja, echt overal) gebruik gemaakt van classes. Ik w
   Nb. Vermeld de bronnen ook in je code.
 
   1. Gradient nav: https://www.w3schools.com/css/css3_gradients.asp
-  2. Scroll animatie debug: https://chatgpt.com/c/69011098-61e8-832c-b5d2-d25d12e82a80 > id zelf veranderd naar queryselector
-  3. HR: https://www.w3schools.com/howto/howto_css_style_hr.asp 
+  2. .
+  3. 
   4. Shortcuts (hulp van Lucas vorig jaar)
   5. Hamburger menu: https://www.youtube.com/watch?v=aNDqzlAKmZc
      https://codepen.io/chiarakars/pen/KwVpxZR
-  7. Carrousel (vorig jaar)
-  8. Light dark mode van vorig jaar (student assistent vorig jaar)
+  6. .
+  7. .
+  8. .
   9. Scroll animatie met button (met groepje vorig jaar)
 
 </details>
