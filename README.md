@@ -72,11 +72,11 @@ Voice Over:
 
   WCAG:
 
- <img src="./readme-images/IMG_0298.png" width="375px" alt="Foto WCAG checklist">
- <img src="./readme-images/IMG_0299.png" width="375px" alt="Foto WCAG checklist">
- <img src="./readme-images/IMG_0300.png" width="375px" alt="Foto WCAG checklist">
- <img src="./readme-images/IMG_0301.png" width="375px" alt="Foto WCAG checklist">
- <img src="./readme-images/IMG_0302.png" width="375px" alt="Foto WCAG checklist">
+ <img src="./readme-images/WCAG1.jpg" width="375px" alt="Foto WCAG checklist">
+ <img src="./readme-images/WCAG2.jpg" width="375px" alt="Foto WCAG checklist">
+ <img src="./readme-images/WCAG3.jpg" width="375px" alt="Foto WCAG checklist">
+ <img src="./readme-images/WCAG4.jpg" width="375px" alt="Foto WCAG checklist">
+ <img src="./readme-images/WCAG5.jpg" width="375px" alt="Foto WCAG checklist">
 
 </details>
 
@@ -180,13 +180,13 @@ Voice Over:
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
-Porsche: autoplay homepage
+Porsche: autoplay homepage |
 Chiara: geen autoplay, onverwacht bewegende beelden kan trigger zijn > oplossing: zelf handmatig video aanzetten met knop rechtsonder in de homepage
 
-Porsche: footer slordig en tekst afgeknipt dus onleesbaar
+Porsche: footer slordig en tekst afgeknipt dus onleesbaar |
 Chiara: footer volledig leesbaar en buttons responsive
 
-Porsche: geen darkmodus
+Porsche: geen darkmodus |
 Chiara: wel darkmodus (note: staat op homepage, maar handiger in menu zodat je makkelijk kan aanpassen)
 
   Voice Over:
@@ -196,11 +196,11 @@ Chiara: wel darkmodus (note: staat op homepage, maar handiger in menu zodat je m
   - darkmode & pauze buttons als getal voorgelezen > alt tekst toegevoegd
   - list decoratie nog niet weggehaald > nu wel en decoratie dus niet voorgelezen
 
- <img src="./readme-images/IMG_0298.png" width="375px" alt="Foto WCAG checklist">
- <img src="./readme-images/IMG_0299.png" width="375px" alt="Foto WCAG checklist">
- <img src="./readme-images/IMG_0300.png" width="375px" alt="Foto WCAG checklist">
- <img src="./readme-images/IMG_0301.png" width="375px" alt="Foto WCAG checklist">
- <img src="./readme-images/IMG_0302.png" width="375px" alt="Foto WCAG checklist">
+ <img src="./readme-images/WCAG1.jpg" width="375px" alt="Foto WCAG checklist">
+ <img src="./readme-images/WCAG2.jpg" width="375px" alt="Foto WCAG checklist">
+ <img src="./readme-images/WCAG3.jpg" width="375px" alt="Foto WCAG checklist">
+ <img src="./readme-images/WCAG4.jpg" width="375px" alt="Foto WCAG checklist">
+ <img src="./readme-images/WCAG5.jpg" width="375px" alt="Foto WCAG checklist">
  
 </details>
 
