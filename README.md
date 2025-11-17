@@ -290,7 +290,8 @@ Ik heb feedback gekregen over de verwachtingen van surface plane en na het gespr
 
 
   ### Je uitkomst - karakteristiek screenshots:
-
+  <img src="readme-images/final_homepage.png" width="375px" alt="final homepage">
+  <img src="readme-images/final_secondpage.png" width="375px" alt="final secondpage">
 
   ### Dit ging goed/Heb ik geleerd:
   Ik ben het meest trots op niet persee een specofiek onderdeel van mijn website, maar dat ik het idee heb dat ik het daadwerkelijk begrijp. Ik heb vorig jaar moeite gehad met dit vak en ook dit jaar vond ik het lastig, met name omdat ik de kennis van vorig jaar niet meer kon toepassen en een nieuwe werkwijze moest gebruiken (geen classes, div's etc). Ik heb veel nieuwe kennis opgedaan en dit ook kunnen toepassen. Op een gegeven moment hoefde ik niet telkens meer naar voorgaande codes terug te kijken tijdens het coderen, omdat ik eindelijk grip had op wanneer je welk element gebruikt en hoe je dat aanspreekt. Vanaf dat moment vond ik het ook leuker worden. Ik denk dat ik nu in staat ben om (de basis) van elke willekeurige website na te maken en dat idee vind ik best cool. 
