@@ -242,6 +242,8 @@ main > section:nth-of-type(3) img {
 main > section:nth-of-type(3) ul {
   margin: 0;
   padding: 0;
+  text-decoration: "";
+  list-style: "";
 }
 
 main > section:nth-of-type(3) ul li h3 {
