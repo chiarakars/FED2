@@ -57,8 +57,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-<p>mogelijkheid video's op pauze zetten</p>
-<p>text to speech</p>
+
+- autoplay op homepage, wel pauzeer knop aanwezig (zelfde geldt voor carrousel)
+- over het algemeen responsive, alleen de footer slordig. tekst is niet leesbaar en buttons vallen buiten de view
+
+Voice Over:
+- begint goed bij de nav van links naar rechts
+- navigeert op logische wijze door de pagina heen
+- Homepage ('drie modellen') alleen pijltje als link aangegeven
+- 'Vind uw nieuwe Porsche' sectie wordt niet voorgelezen alleen de knop
+- Afbeeldingen hebben alt teksten
+- Video's hebben alt teksten
+  
 
  <img src="./readme-images/IMG_0298.png" width="375px" alt="Foto WCAG checklist">
  <img src="./readme-images/IMG_0299.png" width="375px" alt="Foto WCAG checklist">
